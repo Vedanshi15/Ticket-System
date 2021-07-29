@@ -11,11 +11,11 @@
 | Admin | Zoya | Zoya15 |
 | Client | Vedanshi | Vedu15 |
 
-## Languages: 
+## Languages
 * PHP 
 * XML
 
-## Tools:
+## Tools
 * PhpStorm
 * MAMP
 
