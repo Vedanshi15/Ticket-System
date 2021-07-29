@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tickets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ticket" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ticketid" type="xs:positiveInteger"/>
+              <xs:element name="dateissued" type="xs:dateTime"/>
+              <xs:element name="category" type="xs:string"/>
+              <xs:element name="messages">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="message" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="messagetext" type="xs:string"/>
+                          <xs:element name="dateposted" type="xs:dateTime"/>
+                        </xs:sequence>
+                        <xs:attribute name="userid" type="xs:positiveInteger" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="status" type="status"/>
+              <xs:element name="userid" type="xs:positiveInteger" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- CUSTOM SIMPLE DATA TYPES -->
+  <xs:simpleType name="status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Resolved"/>
+      <xs:enumeration value="Ongoing"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

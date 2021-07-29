@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="user.xsd">
+  <user>
+    <userid>101</userid>
+    <username>Vedanshi</username>
+    <password>16ae16405d732e01616e6f5460dfeddc</password>
+    <email>vedu2673@outlook.com</email>
+    <usertype>Client</usertype>
+  </user>
+  <user>
+    <userid>102</userid>
+    <username>Zoya</username>
+    <password>4bcc32e608d0a8e2d5c555f1d894ec51</password>
+    <email>Zoyapatel23@yahoo.com</email>
+    <usertype>Admin</usertype>
+  </user>
+  <user>
+    <userid>103</userid>
+    <username>Zeel</username>
+    <password>1e21e6830003fcb8d9621df8223f4155</password>
+    <email>zeel01@outlook.com</email>
+    <usertype>Client</usertype>
+  </user>
+  <user>
+    <userid>104</userid>
+    <username>Keya</username>
+    <password>c61f143c37f7c9b1b17e66ca15f00417</password>
+    <email>Keya3748@gmail.com</email>
+    <usertype>Client</usertype>
+  </user>
+</users>

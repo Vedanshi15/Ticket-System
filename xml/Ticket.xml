@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ticket.xsd">
+  <ticket>
+    <ticketid>1</ticketid>
+    <dateissued>2021-04-10T13:05:30</dateissued>
+    <category>Orders</category>
+    <messages>
+      <message userid="103">
+        <messagetext>Can I cancel my order?</messagetext>
+        <dateposted>2021-05-11T12:34:33</dateposted>
+      </message>
+      <message userid="102">
+        <messagetext>It's shipped, You can't cancel.</messagetext>
+        <dateposted>2021-05-12T12:20:04</dateposted>
+      </message>
+      <message userid="105">
+        <messagetext>Ok Thanks!!</messagetext>
+        <dateposted>2021-05-12T12:40:04</dateposted>
+      </message>
+    </messages>
+    <status>Ongoing</status>
+    <userid>101</userid>
+  </ticket>
+  <ticket>
+    <ticketid>2</ticketid>
+    <dateissued>2021-05-15T22:14:23</dateissued>
+    <category>Return</category>
+    <messages>
+      <message userid="104">
+        <messagetext>where is my refund?</messagetext>
+        <dateposted>2021-05-15T22:14:23</dateposted>
+      </message>
+    </messages>
+    <status>Resolved</status>
+    <userid>104</userid>
+  </ticket>
+  <ticket>
+    <ticketid>3</ticketid>
+    <dateissued>2021-05-18T11:34:33</dateissued>
+    <category>Return</category>
+    <messages>
+      <message userid="104">
+        <messagetext>How do I return my order?</messagetext>
+        <dateposted>2021-05-18T11:34:33</dateposted>
+      </message>
+    </messages>
+    <status>Resolved</status>
+    <userid>101</userid>
+  </ticket>
+  <ticket>
+    <ticketid>4</ticketid>
+    <dateissued>2021-05-20T11:34:33</dateissued>
+    <category>General</category>
+    <messages>
+      <message userid="101">
+        <messagetext>How can I contact you?</messagetext>
+        <dateposted>2021-05-20T10:50:33</dateposted>
+      </message>
+      <message userid="104">
+        <messagetext>Call on 6872285563</messagetext>
+        <dateposted>2021-05-20T11:54:33</dateposted>
+      </message>
+      <message userid="102">
+        <messagetext>ok thanks</messagetext>
+        <dateposted>2021-07-28T00:11:43</dateposted>
+      </message>
+    </messages>
+    <status>Resolved</status>
+    <userid>101</userid>
+  </ticket>
+</tickets>
