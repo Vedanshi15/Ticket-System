@@ -1,5 +1,9 @@
 <?php
   session_start();
+  if($_SESSION['status']!="Logged In")
+  {
+    header("Location: ./index.php");
+  }
   $TicketId = $_POST['id'];
   $userid = $_SESSION['userId'];
   $username = $_SESSION['username'];
@@ -16,7 +20,7 @@
   $doc->load("xml/Ticket.xml");
   $xpath = new DOMXPath($doc);
   $userTickets = $xpath->query("//ticket[ticketid=$TicketId]");
-  var_dump($userTickets);
+  //var_dump($userTickets);
   if (isset($_POST["sendmsg"])) {
     $msg = $_POST["msg"];
     if (empty($msg)) {
@@ -99,7 +103,7 @@
       </div>
     </div>
     <div class="table-responsive">
-      <h3 class="mb-4 text-center"></h3>
+      <a class="p-3 bg-dark text-white" <?php if($usertype=='Admin'){?>href="admin.php" <?php } if($usertype=='Client'){?>href="Client.php"<?php } ?>>Go Back</a>
       <table class="table table-dark justify-content-center">
         <thead>
         <tr>

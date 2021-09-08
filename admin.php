@@ -1,5 +1,9 @@
 <?php
   session_start();
+  if($_SESSION['status']!="Logged In")
+  {
+    header("Location: ./index.php");
+  }
   $username = $_SESSION['username'];
   $rows = "";
   $ticketDoc = new DOMDocument();
@@ -39,6 +43,7 @@
     </div>
     <div class="table-responsive">
       <h3 class="mb-4 text-center">Tickets</h3>
+      <a class="p-3 bg-dark text-white" href="index.php">Go Back</a>
       <table class="table table-dark justify-content-center">
         <thead>
         <tr>

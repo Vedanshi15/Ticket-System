@@ -1,5 +1,9 @@
 <?php
   session_start();
+  if($_SESSION['status']!="Logged In")
+  {
+    header("Location: ./index.php");
+  }
   //using session variables values
   $userId = $_SESSION['userId'];
   $username = $_SESSION['username'];

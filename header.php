@@ -10,6 +10,6 @@
 </head>
 <body class="img js-fullheight" style="background-image: url(images/bg3.jpg);">
   <nav class="navbar fixed-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">Ticket System</a>
+    <a class="navbar-brand" href="index.php">Ticket System</a>
     <a class="navbar-brand" href="logout.php">LogOut</a>
   </nav>
