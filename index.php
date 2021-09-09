@@ -24,7 +24,7 @@ if (isset($_POST["signin"])) { //chcek button is set or not
 			if (($usertype == "Admin")) {
 				header("Location: admin.php");
 			} else if (($usertype == "Client")) {
-				header("Location: client.php");
+				header("Location: Client.php");
 			}
 			break;
 		} else {
