@@ -57,29 +57,6 @@ if (isset($_POST["signin"])) { //chcek button is set or not
     <div class="row justify-content-center">
       <div class="col-md-6 text-center mb-4">
         <h2 class="heading-section">Login</h2>
-        <div class="table-responsive">
-          <table class="table table-dark justify-content-center">
-            <thead>
-            <tr>
-              <th scope="col">User Name</th>
-              <th scope="col">Password</th>
-              <th scope="col">User Type</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Zoya</td>
-              <td>Zoya15</td>
-              <td>Admin</td>
-            </tr>
-            <tr>
-              <td>Vedanshi</td>
-              <td>Vedu15</td>
-              <td>Client</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
 
     </div>
@@ -102,6 +79,34 @@ if (isset($_POST["signin"])) { //chcek button is set or not
         </div>
       </div>
     </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center mb-4">
+      <div class="table-responsive">
+        <table class="table table-dark justify-content-center">
+          <thead>
+          <tr>
+            <th scope="col">User Name</th>
+            <th scope="col">Password</th>
+            <th scope="col">User Type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Zoya</td>
+            <td>Zoya15</td>
+            <td>Admin</td>
+          </tr>
+          <tr>
+            <td>Vedanshi</td>
+            <td>Vedu15</td>
+            <td>Client</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
   </div>
 </section>
 <?php
